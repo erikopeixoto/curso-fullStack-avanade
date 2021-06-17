@@ -11,7 +11,7 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Services
 
         public void AddEmployeeRole(Entities.EmployeeRole employeeRole)
         {
-            throw new System.NotImplementedException();
+            throw new System.NotImplementedException("Será implementado.");
         }
     }
 }
