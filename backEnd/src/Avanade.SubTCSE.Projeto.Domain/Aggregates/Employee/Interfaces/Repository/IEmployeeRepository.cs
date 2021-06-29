@@ -1,7 +1,9 @@
-﻿namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Interfaces.Repository
+﻿using System.Threading.Tasks;
+
+namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Interfaces.Repository
 {
     public interface IEmployeeRepository
     {
-        void AddEmployee(Entities.Employee employee);
+        Task<Entities.Employee> AddEmployee(Entities.Employee employee);
     }
 }

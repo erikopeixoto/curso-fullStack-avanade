@@ -2,9 +2,9 @@
 
 namespace Avanade.SubTCSE.Projeto.Application.AutoMapperConfig.Profiles.EmployeeRole
 {
-    public class EmployeeRoleProfile : Profile
+    public class EmployeeProfile : Profile
     {
-        public EmployeeRoleProfile()
+        public EmployeeProfile()
         {
             CreateMap<Dtos.EmployeeRole.EmployeeRoleDto, Domain.Aggregates.EmployeeRole.Entities.EmployeeRole>()
                 .ForCtorParam("roleName", opt => opt.MapFrom(src => src.cargo));
