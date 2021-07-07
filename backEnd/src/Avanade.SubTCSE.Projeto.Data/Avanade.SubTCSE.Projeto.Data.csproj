@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\Employee\" />
-    <Folder Include="Repositories\EmployeeRole\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.12.4" />
   </ItemGroup>
 
