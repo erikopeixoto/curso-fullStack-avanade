@@ -23,6 +23,7 @@ namespace Avanade.SubTCSE.Projeto.Application.AutoMapperConfig.Profiles.Employee
             CreateMap<Domain.Aggregates.Employee.Entities.Employee, Dtos.Employee.EmployeeDto>()
                 .ForMember(dest => dest.Identificador, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.PrimeiroNome, opt => opt.MapFrom(src => src.FirstName))
+                .ForMember(dest => dest.SobreNome, opt => opt.MapFrom(src => src.SurName))
                 .ForMember(dest => dest.Salario, opt => opt.MapFrom(src => src.Salary))
                 .ForMember(dest => dest.Cargo, opt => opt.MapFrom(src => src.EmployeeRole))
                 .ForMember(dest => dest.Ativo, opt => opt.MapFrom(src => src.Active))
